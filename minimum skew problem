@@ -25,7 +25,7 @@ def minimum_skew_positions (sequence):
         
 # Get filename from the command arguments and open the file
 filename = str(sys.argv)
-f = open('filename', 'r')
+f = open(filename, 'r')
 
 # Get the data from the file
 sequence = f.readline().strip()
