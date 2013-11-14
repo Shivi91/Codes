@@ -70,7 +70,7 @@ def result(kmers):
 
 if __name__ == '__main__':
 
-    text,num= [item.strip() for item in read_file(sys.argv[-1])]
+    text,num= [item.strip() for item in read_file(sys.argv)]
     k, d = [int(item) for item in num.split(' ')]
     kmers = kmer_composition(text,k)
     result = result(kmers)
